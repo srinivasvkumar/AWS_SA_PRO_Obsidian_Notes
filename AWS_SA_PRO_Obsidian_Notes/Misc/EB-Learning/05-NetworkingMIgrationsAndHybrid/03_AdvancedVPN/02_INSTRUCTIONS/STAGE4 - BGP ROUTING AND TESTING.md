@@ -1,0 +1,127 @@
+---
+aliases:
+- "Advanced Highly-Available Dynamic Site-to-Site VPN"
+---
+
+# Advanced Highly-Available Dynamic Site-to-Site VPN
+
+In this stage you will use the IPSEC tunnels created in stage 3 .. adding [[AWS_SA_PRO_Obsidian_Notes/Master/BGP|BGP]] sessions over all the tunnels.
+These sessions will allow the ONPREM Routers to exchange routers with the [[Transit gateway]] running in AWS
+Once routes are exchanged, the connections will allow data to flow between AWS and ONPREMISES
+[[AWS_SA_PRO_Obsidian_Notes/Master/BGP|BGP]] capability is added using `FRR` and that will be installed as part of this stage of the demo.
+
+# STAGE 4A - INSTALL FRR ON ROUTER 1 ([[AWS_SA_PRO_Obsidian_Notes/Master/BGP|BGP]] CAPABILITY)
+
+Move to [[ec2]] Console
+https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Instances:sort=instanceState
+Click `Instances` on the left menu
+Locate and select `ONPREM-ROUTER1`
+Right Click => `Connect`
+Select `Session Manager`
+Click `Connect`
+
+First we will make the `FRR` script executable and run it to install [[AWS_SA_PRO_Obsidian_Notes/Master/BGP|BGP]] capability.
+`chmod +x ffrouting-install.sh`
+`./ffrouting-install.sh`
+** This will take some time - 10-15 minutes **
+** We can allow this to run, and start the same process on the other Router **
+
+# STAGE 4B - INSTALL FRR ON ROUTER 2 ([[AWS_SA_PRO_Obsidian_Notes/Master/BGP|BGP]] CAPABILITY)
+
+Move to [[ec2]] Console
+https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Instances:sort=instanceState
+Click `Instances` on the left menu
+Locate and select `ONPREM-ROUTER2`
+Right Click => `Connect`
+Select `Session Manager`
+Click `Connect`
+
+`chmod +x ffrouting-install.sh`
+`./ffrouting-install.sh`
+
+# STAGE 4C - CONFIGURE [[AWS_SA_PRO_Obsidian_Notes/Master/BGP|BGP]] ROUTING FOR ONPREMISES-ROUTER1 AND TEST
+
+`vtysh`
+`conf t`
+`frr defaults traditional`
+`router bgp 65016`
+`neighbor CONN1_TUNNEL1_AWS_BGP_IP remote-as 64512`
+`neighbor CONN1_TUNNEL2_AWS_BGP_IP remote-as 64512`
+`no bgp ebgp-requires-policy`
+`address-family ipv4 unicast`
+`redistribute connected`
+`exit-address-family`
+`exit`
+`exit`
+`wr`
+`exit`
+
+`sudo reboot`
+
+SHOW THE ROUTES VIA THE UI
+SHOW THE ROUTES VIA `vtysh`
+
+Move to [[ec2]] Console
+https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Instances:sort=instanceState
+Click `Instances` on the left menu
+Locate and select `ONPREM-SERVER1`
+Right Click => `Connect`
+Select `Session Manager`
+Click `Connect`
+
+run `ping IP_ADDRESS_OF_EC2-A`
+
+Move to [[ec2]] Console
+https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Instances:sort=instanceState
+Click `Instances` on the left menu
+Locate and select `EC2-A`
+Right Click => `Connect`
+Select `Session Manager`
+Click `Connect`
+
+run `ping IP_ADDRESS_OF_ONPREM-SERVER1`
+
+
+# STAGE 4D - CONFIGURE [[AWS_SA_PRO_Obsidian_Notes/Master/BGP|BGP]] ROUTING FOR ONPREMISES-ROUTER2 AND TEST
+
+`vtysh`
+`conf t`
+`frr defaults traditional`
+`router bgp 65016`
+`neighbor CONN2_TUNNEL1_AWS_BGP_IP remote-as 64512`
+`neighbor CONN2_TUNNEL2_AWS_BGP_IP remote-as 64512`
+`no bgp ebgp-requires-policy`
+`address-family ipv4 unicast`
+`redistribute connected`
+`exit-address-family`
+`exit`
+`exit`
+`wr`
+`exit`
+
+`sudo reboot`
+
+SHOW THE ROUTES VIA THE UI
+SHOW THE ROUTES VIA `vtysh`
+
+Move to [[ec2]] Console
+https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Instances:sort=instanceState
+Click `Instances` on the left menu
+Locate and select `ONPREM-SERVER2`
+Right Click => `Connect`
+Select `Session Manager`
+Click `Connect`
+
+run `ping IP_ADDRESS_OF_EC2-B`
+
+Move to [[ec2]] Console
+https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Instances:sort=instanceState
+Click `Instances` on the left menu
+Locate and select `EC2-B`
+Right Click => `Connect`
+Select `Session Manager`
+Click `Connect`
+
+run `ping IP_ADDRESS_OF_ONPREM-SERVER2`
+
+

@@ -1,0 +1,223 @@
+{
+  "main": {
+    "id": "0c6c65dca394998e",
+    "type": "split",
+    "children": [
+      {
+        "id": "a21c3c20952eaef1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6f9940f3e6617fb5",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "48e13f4d221d13a7",
+    "type": "split",
+    "children": [
+      {
+        "id": "d6dae20a0f7588c6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4ffebf54ff532e46",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "3ef25a01c60d8ad7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "e4448aa4d8dc708d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 323.5,
+    "collapsed": true
+  },
+  "right": {
+    "id": "176087c643f85be8",
+    "type": "split",
+    "children": [
+      {
+        "id": "e29c1ca2dbd0e767",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5c3f6cbf9c717200",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "AWS_SA_PRO_Obsidian_Notes/Master/04-storage/S3 copy.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for S3 copy"
+            }
+          },
+          {
+            "id": "6c439f2793a0fbcc",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "55219cf63d2977dc",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "d4b100a3baf118b9",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "e3eee77986c08f53",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "AWS_SA_PRO_Obsidian_Notes/Master/04-storage/S3 copy.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of S3 copy"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false,
+      "omnisearch:Omnisearch": false,
+      "smart-connections:Smart Connections: Open connections view": false,
+      "smart-connections:Smart Lookup: Open lookup view": false,
+      "smart-connections:Smart Connections: Open random connection": false,
+      "obsidian-excalidraw-plugin:New drawing": false
+    }
+  },
+  "active": "6f9940f3e6617fb5",
+  "lastOpenFiles": [
+    "AWS_SA_PRO_Obsidian_Notes/Master/12-security-and-config/acm.md",
+    "AWS_SA_PRO_Obsidian_Notes/Master/29_Advanced_Security_Config/Amazon GuardDuty Threat Detection.md",
+    "AWS_SA_PRO_Obsidian_Notes/Master/08-data-analytics/08-data-analytics.md",
+    "AWS_SA_PRO_Obsidian_Notes/00_AWS_SAP_PRO_INDEX.md",
+    "AWS_SA_PRO_Obsidian_Notes/Master/00_Exam_Domains/Domain 4 - Accelerate Workload Migration and Modernization.md",
+    "AWS_SA_PRO_Obsidian_Notes/Master/00_Exam_Domains/Domain 3 - Continuous Improvement for Existing Solutions.md",
+    "AWS_SA_PRO_Obsidian_Notes/Master/00_Exam_Domains/Domain 2 - Design for New Solutions.md",
+    "AWS_SA_PRO_Obsidian_Notes/Master/00_Exam_Domains/Domain 1 - Design Solutions for Organizational Complexity.md",
+    "AWS_SA_PRO_Obsidian_Notes/Master/27-databases/27-databases.md",
+    "AWS_SA_PRO_Obsidian_Notes/Master/27-databases/Dynamo DB.md",
+    "AWS_SA_PRO_Obsidian_Notes/Master/27-databases/dynamodb.md",
+    "AWS_SA_PRO_Obsidian_Notes/Master/13-disaster-recovery/dr.md",
+    "AWS_SA_PRO_Obsidian_Notes/Master/25_ADR/Enterprise Database Architecture.md",
+    "AWS_SA_PRO_Obsidian_Notes/Master/27-databases/Amazon Aurora Global Database.md",
+    "AWS_SA_PRO_Obsidian_Notes/Master/10-caching/cloudfront.md",
+    "AWS_SA_PRO_Obsidian_Notes/Master/17-Serverless/Lambda@Edge.md",
+    "AWS_SA_PRO_Obsidian_Notes/Master/28-containers-and-serverless/api-gateway.md",
+    "AWS_SA_PRO_Obsidian_Notes/Master/28-containers-and-serverless/28-containers-and-serverless.md",
+    "AWS_SA_PRO_Obsidian_Notes/Master/11-migrations/6r.md",
+    "AWS_SA_PRO_Obsidian_Notes/Master/11-migrations/images/6RsOfMigration.png",
+    "AWS_SA_PRO_Obsidian_Notes/Master/04-storage/S3 copy.md",
+    "AWS_SA_PRO_Obsidian_Notes/Master/11-migrations/datasync.md",
+    "AWS_SA_PRO_Obsidian_Notes/Master/20-Developer_Tools/20-Developer_Tools.md",
+    "AWS_SA_PRO_Obsidian_Notes/Master/20-Developer_Tools/CodePipeline_Stages.md",
+    "AWS_SA_PRO_Obsidian_Notes/Master/04-storage/04-storage.md",
+    "AWS_SA_PRO_Obsidian_Notes/Master/04-storage/fsx.md",
+    "AWS_SA_PRO_Obsidian_Notes/Master/25_ADR/25_ADR.md",
+    "Master/Git_hub_notes/AWS-SAP-C02-Notes-main",
+    "Master/Git_hub_notes",
+    "Master",
+    "Untitled.base"
+  ]
+}

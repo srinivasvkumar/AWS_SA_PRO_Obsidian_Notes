@@ -1,0 +1,35 @@
+
+%% Begin Waypoint %%
+- **images**
+	- [[DRArchitectureCompute.png]]
+	- [[DRArchitectureDatabases.png]]
+	- [[DRArchitectureNetworking.png]]
+	- [[DRArchitectureStorage.png]]
+- [[AWS Elastic Disaster Recovery (DRS)]]
+- [[Disaster Recovery & Resiliency copy]]
+- [[Disaster Recovery & Resiliency]]
+- [[DR Strategy - Backup & Restore]]
+- [[DR Strategy - Multi-Site Active-Active]]
+- [[DR Strategy - Pilot Light]]
+- [[DR Strategy - Warm Standby]]
+- [[dr]]
+- [[drs]]
+- [[RTO & RPO Strategy Matrix]]
+- [[Screenshot 2026-01-26 at 10.11.37 AM.png]]
+- [[Screenshot 2026-01-26 at 10.13.44 AM.png]]
+- [[Screenshot 2026-01-26 at 10.19.25 AM.png]]
+- [[Screenshot 2026-01-26 at 10.28.45 AM.png]]
+- [[Screenshot 2026-01-26 at 10.30.43 AM.png]]
+- [[Screenshot 2026-01-26 at 10.33.14 AM.png]]
+- [[Screenshot 2026-01-26 at 10.41.00 AM.png]]
+- [[Screenshot 2026-01-26 at 10.54.42 AM.png]]
+- [[Screenshot 2026-01-26 at 11.08.08 AM.png]]
+- [[Screenshot 2026-01-26 at 11.11.10 AM.png]]
+- [[Screenshot 2026-01-26 at 11.16.50 AM.png]]
+- [[Screenshot 2026-01-26 at 11.18.42 AM.png]]
+- [[Screenshot 2026-01-26 at 11.21.12 AM.png]]
+- [[Screenshot 2026-01-26 at 11.21.25 AM.png]]
+- [[Screenshot 2026-01-26 at 11.21.37 AM.png]]
+
+%% End Waypoint %%
+

@@ -1,0 +1,1 @@
+1) Used on [[ec2]] instances for sending additional metric data and logs to [[cloudwatch]]

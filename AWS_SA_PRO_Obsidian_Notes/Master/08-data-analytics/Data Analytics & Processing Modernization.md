@@ -1,0 +1,16 @@
+# Data Analytics & Processing Modernization
+
+- [[AWS Glue Data Catalog & Crawlers]]
+- [[AWS Glue ETL Job Optimization]]
+- [[Amazon EMR Big Data Architecture]]
+- [[Amazon Kinesis Data Streams Capacity Planning]]
+- [[Amazon Kinesis Data Firehose Integration]]
+- [[Amazon Kinesis Data Analytics]]
+- [[Amazon Redshift RA3 Nodes & Managed Storage]]
+- [[Amazon Redshift Spectrum Data Lake Integration]]
+- [[Amazon Redshift Concurrency Scaling]]
+- [[Amazon Redshift Data Sharing]]
+- [[Amazon Managed Streaming for Apache Kafka (MSK)]]
+- [[Amazon Athena Workgroups & Query Federation]]
+- [[AWS Lake Formation Data Governance]]
+- [[Amazon QuickSight SPICE Capacity]]
